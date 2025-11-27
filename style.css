@@ -1,0 +1,97 @@
+/* style.css */
+:root{
+  --bg:#fbfbfb; --card:#ffffff; --muted:#6b6f76; --accent:#111111; --accent-2:#e60012; --max:1100px;
+  --gap:20px;
+}
+*{box-sizing:border-box}
+body{font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:28px auto;padding:28px}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:180px;height:64px;border-radius:8px;background:linear-gradient(135deg,#111,#333);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+h1{font-size:20px;margin:0}.sub{color:var(--muted);font-size:13px}
+nav{display:flex;gap:14px}nav a{color:var(--muted);text-decoration:none;font-size:14px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;background:linear-gradient(180deg, #fff 0,#fff 60%);padding:36px;border-radius:12px}
+.hero-left{padding:8px}
+.kicker{font-size:12px;color:var(--muted);letter-spacing:0.08em}
+.hero h2{font-size:36px;line-height:1.05;margin:8px 0;color:var(--accent)}
+.hero p{color:var(--muted);margin-top:8px}
+.mock{background:linear-gradient(180deg,#f6f6f6,#fff);padding:18px;border-radius:10px;border:1px solid #eee}
+.mock .image {
+  width: 100%;
+  height: 260px; /* 高さはお好みで調整 */
+  background: url(../ユニクロ/img/12.1.png) no-repeat center center;
+  background-size: contain; /* 画像全体を表示 */
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px;
+  color: #333;
+  font-weight: 700;
+}
+/* Hero1 */
+.hero1{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;background:linear-gradient(180deg, #fff 0,#fff 60%);padding:36px;border-radius:12px}
+.hero-left1{padding:8px}
+.kicker1{font-size:12px;color:var(--muted);letter-spacing:0.08em}
+.hero1 h2{font-size:15px;line-height:1.05;margin:8px 0;color:var(--accent)}
+.hero1 p{color:var(--muted);margin-top:8px}
+.mock1{background:linear-gradient(180deg,#f6f6f6,#fff);padding:18px;border-radius:10px;border:1px solid #eee}
+.mock1 .image1{width:100%;height:260px;background-image: url(../ユニクロ/img/33805637_m.jpg);background-size: 110%;border-radius:8px;display:flex;align-items:flex-end;justify-content:center;padding:18px;color:#333;font-weight:700
+}
+/* Products */
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+.product{background:var(--card);border-radius:10px;padding:12px;border:1px solid #eee}
+/* Coat 01 */
+.product .photo {
+  width: 100%;
+  height: 220px; /* 枠の高さはそのまま */
+  border-radius: 8px;
+  background: url(../ユニクロ/img/th_Img257646x.jpg) no-repeat center top;
+  background-size: 33%; /* 枠の33%サイズに縮小 */
+}
+.coat01-visual {
+  background:url(../ユニクロ/img/th_Img257646x.jpg) no-repeat center 25%;
+  background-size: 60%;
+}
+
+
+/* Coat 02 */
+.product .photo1 {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  background: url(../ユニクロ/img/RsQ.jpg) no-repeat center center;
+  background-size: 30%; /* 枠の30%サイズに縮小 */
+}
+.coat02-visual {
+  
+  background: url(../ユニクロ/img/RsQ.jpg) no-repeat center 10%;
+  background-size: 90%;
+  
+}
+.p-title{margin:10px 0 6px;font-weight:700}
+.p-sub{font-size:13px;color:var(--muted)}
+.price{font-weight:700;color:var(--accent-2);margin-bottom:6px}
+.p-sub a{color:var(--accent-2);text-decoration:none;font-weight:600}
+
+/* Feature / Product Details */
+.feature{display:flex;gap:18px;align-items:flex-start;margin-top:26px}
+.feature .left{flex:1}
+.feature .visual{height:200px;border-radius:10px;border:solid 1px rgb(236, 235, 235);}
+
+/* Footer */
+footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;}
+  .products{grid-template-columns:1fr}
+  .feature{flex-direction:column}
+  .hero h2{font-size:28px}
+}
+@media (max-width:620px){
+  .products{grid-template-columns:1fr}
+}
